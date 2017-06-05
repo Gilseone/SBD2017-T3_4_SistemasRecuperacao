@@ -1,0 +1,22 @@
+﻿<T1 start>
+<read T1, A>
+<read T1, D>
+<write T1, D, 20, 25>
+<checkpoint T1>
+<start T2>
+<commit T1>
+<read T2, B>
+<write T2, B, 12, 18>
+<start T4>
+<read T4, D>
+<write T4, D, 25, 15>
+<start T3>
+<read T3, C>
+<write T3, C, 30, 40>
+<read T4, A>
+<checkpoint T2, T3, T4>
+<write T4, A, 30, 20>
+<commit T4>
+<read T2, D>
+<write T2, D, 15, 25>
+Queda do sistema
